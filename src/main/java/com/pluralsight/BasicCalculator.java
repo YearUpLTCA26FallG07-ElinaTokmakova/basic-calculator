@@ -11,12 +11,14 @@ public class BasicCalculator {
 
         System.out.print("Enter the second number: ");
         int number2 = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("What do you want to do?");
         System.out.println(" (A)dd\n" +
                 " (S)ubtract\n" +
                 " (M)ultiply\n" +
                 " (D)ivide");
+        System.out.print("Please select an option:");
         String action = scanner.nextLine();
 
         System.out.println(number1 + " * " + number2 + " = " + (number1 * number2));
